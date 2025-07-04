@@ -1,0 +1,16 @@
+# Bytecode and cache
+__pycache__/
+*.py[cod]
+
+# SQLite DB
+*.db
+
+# Virtual environment
+venv/
+
+# VS Code settings
+.vscode/
+
+# OS junk files
+.DS_Store
+Thumbs.db
