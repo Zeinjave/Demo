@@ -1,3 +1,7 @@
+# Ignore Python bytecode cache files
+__pycache__/
+*.pyc
+
 # Auto normalize line endings for text files
 * text=auto
 
