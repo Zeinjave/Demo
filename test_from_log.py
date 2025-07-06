@@ -2,10 +2,21 @@ from transactions import load_transactions_from_csv, load_transactions_from_json
 from safe_decimal import summarize_transactions
 
 def main():
-    tx_list = load_transactions_from_csv("data/test_transactions.csv")
-    result = summarize_transactions(tx_list)
+    print("Choose input file type:")
+    print("1. CSV")
+    print("2. JSON")
+    choice = input("Enter 1 or 2: ")
 
-    print("Transaction Summary:")
+    if choice == "1":
+        tx_list = load_transactions_from_csv()
+    elif choice == "2":
+        tx_list = load_transactions_from_json()
+    else:
+        print("❌ Invalid choice.")
+        return
+
+    result = summarize_transactions(tx_list)
+    print("\nTransaction Summary:")
     for key, value in result.items():
         print(f"{key}: {value}")
 
