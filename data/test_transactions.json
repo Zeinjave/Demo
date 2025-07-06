@@ -1,0 +1,5 @@
+[
+  {"date": "2024-01-01", "amount": 1000, "desc": "Deposit"},
+  {"date": "2024-01-03", "amount": -250, "desc": "Rent"},
+  {"date": "2024-01-06", "amount": "bad", "desc": "Error"}
+]
